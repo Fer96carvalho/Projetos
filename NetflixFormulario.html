@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Netflix</title>
+</head>
+
+<body>
+    <header>
+        <h1>Netflix</h1>
+    </header>
+    <main>
+        <section>
+            <form action="/logar" method="POST">
+                <div>
+                    <label for="email-telefone">Email ou número de telefone</label>
+                    <input type="email" id="email-telefone" name="nome" />
+                </div>
+                <div>
+                    <label for="senha">Senha</label>
+                    <input type="password" id="senha" name="senha" />
+                </div>
+                <button type="submit">Enviar</button>
+                <section>
+                    <p>Tipo de evento</p>
+                    <div>
+                        <input type="radio" name="evento" id="Festa_do_pijama" value="Festa_do_pijama" />
+                        <label for="evento">Festa do pijama</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="evento" id="Cinema_com_amigos" value="Cinema_com_amigos" />
+                        <label for="evento">Cinema com amigos</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="evento" id="Aula_interativa" value="Aula_interativa" />
+                        <label for="evento">Aula interativa</label>
+                    </div>
+                    <div>
+                        <label for="comentario">Outros</label>
+                        <input type="text" id="comentario" name="Especifique" />  
+                    </div>
+                </section>
+                    <div>
+                        <br>
+                        <label for="quantidade">Numero de participantes:</label><br>
+                        <input type="number" id="quantidade" name="quantidade" min="3" max="100">
+                    </div>
+                <section>
+                    <br>
+                    <label for="comentario">Fale mais a respeito</label>
+                    <input type="text" id="comentario" name="Fale mais a respeito" />
+                </section>
+            </form>
+        </section>
+    </main>
+</body>
+
+</html>
